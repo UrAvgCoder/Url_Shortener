@@ -2,11 +2,9 @@ package com.example.tinyurlclone.model;
 
 public class UrlDto {
     private String url;
-    private String expirationDate;  //optional
 
-    public UrlDto(String url, String expirationDate) {
+    public UrlDto(String url) {
         this.url = url;
-//        this.expirationDate = expirationDate;
     }
 
     public UrlDto() {
@@ -20,19 +18,13 @@ public class UrlDto {
         this.url = url;
     }
 
-    public String getExpirationDate() {
-        return expirationDate;
-    }
 
-    public void setExpirationDate(String expirationDate) {
-        this.expirationDate = expirationDate;
-    }
+
 
     @Override
     public String toString() {
         return "UrlDto{" +
                 "url='" + url + '\'' +
-                ", expirationDate='" + expirationDate + '\'' +
                 '}';
     }
 }
