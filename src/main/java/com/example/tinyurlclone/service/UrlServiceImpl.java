@@ -30,7 +30,7 @@ public class UrlServiceImpl implements UrlService {
         urlToPersist.setCreationDate(LocalDateTime.now());
         urlToPersist.setOriginalUrl(urlDto.getUrl());
         urlToPersist.setShortLink(encodedUrl);
-        urlToPersist.setExpirationDate(getExpirationDate(urlDto.getExpirationDate(),urlToPersist.getCreationDate()));
+        // urlToPersist.setExpirationDate(getExpirationDate(urlDto.getExpirationDate(),urlToPersist.getCreationDate()));
 
         return persistShortLink(urlToPersist);
     }

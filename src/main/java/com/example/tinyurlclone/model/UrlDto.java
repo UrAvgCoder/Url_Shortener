@@ -6,7 +6,7 @@ public class UrlDto {
 
     public UrlDto(String url, String expirationDate) {
         this.url = url;
-        this.expirationDate = expirationDate;
+//        this.expirationDate = expirationDate;
     }
 
     public UrlDto() {
